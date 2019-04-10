@@ -10562,7 +10562,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 h1 {
-  color: #201f4b;
+  color: #2b2a66;
   text-align: center;
 }
 
@@ -10571,32 +10571,24 @@ p {
   text-align: center;
 }
 
-.container {
-  margin-bottom: 50px;
-}
-
 .jumbotron {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0.8)), to(rgba(117, 123, 175, 0.8)));
-  background: linear-gradient(rgba(221, 221, 221, 0.8), rgba(117, 123, 175, 0.8));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0.7)), to(rgba(117, 123, 175, 0.7)));
+  background: linear-gradient(rgba(221, 221, 221, 0.7), rgba(117, 123, 175, 0.7));
   width: 60%;
-  margin: 0 auto;
+  min-width: 300px;
+  margin: 0px auto;
 }
 
 .jumbotron a {
-  margin: 0 auto;
+  margin: 0px auto;
   display: block !important;
   width: 50%;
   max-width: 200px;
 }
 
-.btn-primary {
-  background-color: #201f4b;
-  border: 1px solid #010103;
-}
-
-.btn-primary:hover {
-  background-color: #010103;
-  border: 1px solid #201f4b;
+nav .navbar-toggler {
+  margin: 0px auto !important;
+  padding: 15px;
 }
 
 .container-fluid {
@@ -10623,11 +10615,35 @@ p {
 .carousel .carousel-inner .carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100vw;
 }
 
-nav .navbar-toggler {
-  margin: 0 auto !important;
+.carousel .carousel-inner .carousel-item label {
+  display: block;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 50% !important;
+  min-width: 250px;
+  margin: 0px auto;
+}
+
+form .btn-primary {
+  display: block;
+  margin: 0px auto !important;
+}
+
+.btn-primary {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4c4c4), to(#5e638d));
+  background: linear-gradient(#c4c4c4, #5e638d);
+  border: none;
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=main.css.map */

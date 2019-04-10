@@ -4,4 +4,4 @@ $('.carousel').carousel({
     interval: false
 });
 
-// $('#disclaimer').modal('toggle')
+$('#disclaimer').modal('toggle')

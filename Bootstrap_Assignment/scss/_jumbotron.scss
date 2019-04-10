@@ -2,10 +2,11 @@
 .jumbotron {
     @include my-gradient;
     width: 60%;
-    margin: 0 auto;
+    min-width: $min-width + 50px;
+    margin: $margin-auto;
 
     a {
-        margin: 0 auto;
+        margin: $margin-auto;
         display: block !important;
         width: 50%;
         max-width: 200px;

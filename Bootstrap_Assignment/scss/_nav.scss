@@ -1,5 +1,6 @@
 nav {
     .navbar-toggler {
-        margin: 0 auto !important;
+        margin: $margin-auto !important;
+        padding: 15px;
     }
 }

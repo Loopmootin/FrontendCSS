@@ -6,8 +6,11 @@
 @import "variables";
 @import "mixins";
 @import "type";
+
+// My styles on Bootstrap
 @import "jumbotron";
-@import "buttons";
+@import "nav";
 @import "container";
 @import "carousel";
-@import "nav";
+@import "forms";
+@import "buttons";

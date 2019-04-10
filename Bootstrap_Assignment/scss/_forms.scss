@@ -1,0 +1,12 @@
+form {
+    margin-top: 20px;
+
+    input {
+        @include mail-input;
+    }
+
+    .btn-primary {
+        display: block;
+        margin: $margin-auto !important;
+    }
+}

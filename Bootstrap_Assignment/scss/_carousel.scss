@@ -1,6 +1,7 @@
 .carousel {
-    height: 100vh;
-    width: 100vw;
+    height: $full-height;
+    width: $full-width;
+
     .carousel-inner {
         #slide-1 {
             background-image: url("../images/car-1.jpg");
@@ -12,10 +13,11 @@
             background-image: url("../images/car-3.jpg");
         }
         .carousel-item {
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100vw;
+            @include backgrounds;
+            label {
+                display: block;
+                text-align: $align-center;
+            }
         }
     }
 }

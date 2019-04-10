@@ -1,13 +1,9 @@
 h1 {
     color: $my-brand;
-    text-align: center;
+    text-align: $align-center;
 }
 
 p {
     width: 100%;
-    text-align: center;
-}
-
-.container {
-    margin-bottom: 50px;
+    text-align: $align-center;
 }
