@@ -10562,7 +10562,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 h1 {
-  color: #68f586;
+  color: #201f4b;
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  text-align: center;
 }
 
 .container {
@@ -10570,25 +10576,58 @@ h1 {
 }
 
 .jumbotron {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#757baf));
-  background: linear-gradient(#ddd, #757baf);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0.8)), to(rgba(117, 123, 175, 0.8)));
+  background: linear-gradient(rgba(221, 221, 221, 0.8), rgba(117, 123, 175, 0.8));
+  width: 60%;
+  margin: 0 auto;
+}
+
+.jumbotron a {
+  margin: 0 auto;
+  display: block !important;
+  width: 50%;
+  max-width: 200px;
 }
 
 .btn-primary {
-  background-color: #68f586;
-  border: 1px solid #0fe83d;
+  background-color: #201f4b;
+  border: 1px solid #010103;
 }
 
 .btn-primary:hover {
-  background-color: #0fe83d;
-  border: 1px solid #68f586;
+  background-color: #010103;
+  border: 1px solid #201f4b;
 }
 
 .container-fluid {
   height: 100vh;
 }
 
-.carousel .carousel-inner img {
-  width: 100%;
+.carousel {
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel .carousel-inner #slide-1 {
+  background-image: url("../images/car-1.jpg");
+}
+
+.carousel .carousel-inner #slide-2 {
+  background-image: url("../images/car-2.jpg");
+}
+
+.carousel .carousel-inner #slide-3 {
+  background-image: url("../images/car-3.jpg");
+}
+
+.carousel .carousel-inner .carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav .navbar-toggler {
+  margin: 0 auto !important;
 }
 /*# sourceMappingURL=main.css.map */

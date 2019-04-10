@@ -1,4 +1,13 @@
 
 .jumbotron {
     @include my-gradient;
+    width: 60%;
+    margin: 0 auto;
+
+    a {
+        margin: 0 auto;
+        display: block !important;
+        width: 50%;
+        max-width: 200px;
+    }
 }
