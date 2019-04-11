@@ -4,11 +4,12 @@
     width: 60%;
     min-width: $min-width + 50px;
     margin: $margin-auto;
+    margin-top: $push-top;
 
     a {
         margin: $margin-auto;
         display: block !important;
-        width: 50%;
+        width: $half-width;
         max-width: 200px;
     }
 }

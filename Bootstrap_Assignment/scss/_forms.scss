@@ -1,12 +1,12 @@
 form {
-    margin-top: 20px;
+    margin-top: $push-top;
 
     input {
         @include mail-input;
     }
 
     .btn-primary {
-        display: block;
+        display: $block;
         margin: $margin-auto !important;
     }
 }

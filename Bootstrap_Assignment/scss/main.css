@@ -10571,12 +10571,31 @@ p {
   text-align: center;
 }
 
+.modal-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c4c4c4), to(#5e638d));
+  background: linear-gradient(#c4c4c4, #5e638d);
+  color: #fff;
+  border: none;
+}
+
+.modal-content .modal-footer .btn-secondary {
+  background-color: #2b2a66;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 400px;
+}
+
+.modal-content .modal-footer .btn-secondary:hover {
+  background-color: #4948ae;
+}
+
 .jumbotron {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0.7)), to(rgba(117, 123, 175, 0.7)));
-  background: linear-gradient(rgba(221, 221, 221, 0.7), rgba(117, 123, 175, 0.7));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 221, 221, 0.5)), to(rgba(117, 123, 175, 0.5)));
+  background: linear-gradient(rgba(221, 221, 221, 0.5), rgba(117, 123, 175, 0.5));
   width: 60%;
   min-width: 300px;
   margin: 0px auto;
+  margin-top: 20px;
 }
 
 .jumbotron a {
@@ -10588,7 +10607,6 @@ p {
 
 nav .navbar-toggler {
   margin: 0px auto !important;
-  padding: 15px;
 }
 
 .container-fluid {
@@ -10641,9 +10659,13 @@ form .btn-primary {
 }
 
 .btn-primary {
-  background: -webkit-gradient(linear, left top, left bottom, from(#c4c4c4), to(#5e638d));
-  background: linear-gradient(#c4c4c4, #5e638d);
+  background-color: #2b2a66;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  border-radius: 400px;
+}
+
+.btn-primary:hover {
+  background-color: #4948ae;
 }
 /*# sourceMappingURL=main.css.map */

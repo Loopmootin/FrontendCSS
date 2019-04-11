@@ -15,7 +15,7 @@
         .carousel-item {
             @include backgrounds;
             label {
-                display: block;
+                display: $block;
                 text-align: $align-center;
             }
         }

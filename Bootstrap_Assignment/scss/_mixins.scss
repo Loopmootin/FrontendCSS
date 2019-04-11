@@ -3,9 +3,14 @@
 }
 
 @mixin stylish-button {
-    background: linear-gradient($my-gray, $my-blue);
+    background-color: $my-brand;
     border: none;
-    padding: 5px 10px;
+    padding: $button-padding;
+    border-radius: 400px;
+
+    &:hover {
+        background-color: lighten($my-brand, 20%);
+    }
 }
 
 @mixin mail-input {
@@ -20,4 +25,9 @@
     background-position: center;
     height: $full-height;
     width: $full-width;
+}
+
+@mixin my-modal {
+    background: linear-gradient($my-gray, $my-blue);
+    color: $my-font-color;
 }
