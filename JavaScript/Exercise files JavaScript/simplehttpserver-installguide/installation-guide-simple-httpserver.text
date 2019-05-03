@@ -1,0 +1,33 @@
+1.
+https://nodejs.org/en/download/ or write download note.js in google
+
+2.
+open your terminal and wrrite: "sudo npm i -g simplehttpserver"
+to install simplehttpserver globally on your computer, enter your 
+computer password when the terminal prompts it. 
+
+3. 
+Navigate to your project folder via the terminal, simply 
+write cd in terminal and drag the project folder to terminal, 
+press ENTER. 
+
+4. 
+Now you are in your project folder. type: 
+"simplehttpserver" and press ENTER 
+
+The terminal should respond with something like this: 
+Listening 0.0.0.0:8000 web root dir "root to your project"
+
+5. 
+A server runs your project folder. Go to the browser adressfield
+and write: 
+localhost:8000/index.html 
+
+
+Terminal dump: 
+
+Macbook-Pro-31:~ boes$ sudo npm i -g simplehttpserver
+Password:
+Macbook-Pro-31:~ boes$ cd /Users/localuser/Desktop/JSexample6Modules\ \  
+Macbook-Pro-31:JSexample6Modules   boes$ simplehttpserver
+Listening 0.0.0.0:8000 web root dir /Users/localuser/Desktop/JSexample6Modules  

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom left, #0F2027, #203A43, #2C5364);
+    min-height: 100vh;
+}
+
+h2 {
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+p {
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.disabled {
+    display: none;
+}
+
+.outer-circle {
+    display: block;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 600px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.inner-circle {
+    background-color: #bbb;
+    width: 50%;
+    height: auto;
+    min-height: 50%;
+    top: 20vh;
+    left: 20vh;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+#inner-circle-1,
+#inner-circle-2,
+#inner-circle-3,
+#inner-circle-4 {
+    transform-origin: top left;
+    border-radius: 0 0 300px 0;
+    color: white;
+}
+
+#inner-circle-1 {
+    transform: rotate(90deg);
+    background-image: linear-gradient(to bottom left, #373B44, #4286f4);
+}
+
+#inner-circle-2 {
+    transform: rotate(180deg);
+    background-image: linear-gradient(to top left, #373B44, #4286f4);
+}
+
+#inner-circle-3 {
+    transform: rotate(270deg);
+    background-image: linear-gradient(to bottom right, #373B44, #4286f4);
+}
+
+#inner-circle-4 {
+    transform: rotate(0deg);
+    background-image: linear-gradient(to top right, #4286f4, #373B44);
+}
