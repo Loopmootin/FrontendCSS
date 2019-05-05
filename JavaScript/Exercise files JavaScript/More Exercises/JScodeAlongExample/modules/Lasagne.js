@@ -10,19 +10,33 @@ class Lasagne{
 
   async listBitcoinData() {
     let bitCoinData = await Data.getBitcoinData();
-    console.log(bitCoinData.averages);
+    console.log(bitCoinData.changes);
+
+    for (let cng of Object.keys(bitCoinData.changes)) {
+      let listElement = Common.toDom(`<p>${cng}</p>`);
+      this.iLoveLasagneElement.appendChild(listElement);
+
+
+    }
 
     
 
-    for (let avg of Object.keys(bitCoinData.averages)) {
+    for (let pct of Object.keys(bitCoinData.changes.percent)) {
 
-      let data = bitCoinData.averages[avg];
-     
-      let listElement = Common.toDom(`<p>${avg}ly - $${data}</p>`);
+      let data = bitCoinData.changes.percent[pct];
+
+      let listElement = Common.toDom(`<p>${pct} - ${data}</p>`);
       this.iLoveLasagneElement.appendChild(listElement);
+    }
 
+
+    for (let pri of Object.keys(bitCoinData.changes.price)) {
+
+      let data = bitCoinData.changes.price[pri];
+
+      let listElement = Common.toDom(`<p>${pri} - ${data}</p>`);
+      this.iLoveLasagneElement.appendChild(listElement);
     }
   }
-
 }
   export default Lasagne;
