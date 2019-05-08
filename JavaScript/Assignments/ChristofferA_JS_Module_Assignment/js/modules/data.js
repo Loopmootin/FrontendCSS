@@ -16,7 +16,7 @@ class Data{
             
           )
           .catch((err) => {
-            console.log('Fetch Error :(', err);
+            console.log('Fetch Error :-S', err);
           });
       }
       
