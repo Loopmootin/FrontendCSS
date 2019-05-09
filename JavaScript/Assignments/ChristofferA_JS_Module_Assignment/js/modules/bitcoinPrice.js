@@ -11,6 +11,8 @@ class BitcoinPrice{
 
   async listBitcoinDataPrice() { 
 
+    let idArray = [];
+
     let removeElements = document.querySelectorAll(".price-item");
     removeElements.forEach(element => element.parentNode.removeChild(element));
 
@@ -21,9 +23,19 @@ class BitcoinPrice{
       let pri = Object.keys(bitCoinData)[i];
       let data = bitCoinData[pri];
 
-      let listElement = Template.toDom(`<div class="price-item square"><h4><span>${pri}</span> price</h4> <p>${data}$</p></div>`);
+      let listElement = Template.toDom(`<div class="price-item square"><h4><span>${pri}</span> price</h4> <p id="${pri}">${data}</p>$</div>`);
       this.bitcoinElement.appendChild(listElement);
-    }
+
+      let elementId = document.querySelector("#" + pri).id;
+
+      if (elementId == pri) {
+        console.log("We are the same!");
+        idArray.push(elementId);
+      } else {
+        console.log("We're not the same!");
+      }
+    };
   }
 }
+
 export default BitcoinPrice;

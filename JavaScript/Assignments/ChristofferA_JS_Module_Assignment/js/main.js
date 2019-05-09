@@ -1,6 +1,7 @@
 import BitcoinPrice from './modules/bitcoinPrice.js';
 import BitcoinChangesPercent from './modules/bitcoinChangePercent.js';
 import BitcoinChangesPrice from './modules/bitcoinChangePrice.js';
+//import UpdateValue from './modules/updateValues.js';
 
 
 let percentClicked = false;
@@ -13,6 +14,7 @@ function loadOnce() {
 
 if (document.URL.indexOf("index.html") >= 0) {
     let bitcoinPrice = new BitcoinPrice();
+    
 } else if (document.URL.indexOf("price-changes.html") >= 0) {
     let bitcoinChangesPrice = new BitcoinChangesPrice();
     document.querySelector(".btn-percent").addEventListener("click", function () {
@@ -30,8 +32,8 @@ if (document.URL.indexOf("index.html") >= 0) {
         percentClicked = true;
     });
 }
-
-setInterval(function () {
+/*
+setInterval(() => {
     if (document.URL.indexOf("index.html") >= 0) {
         
         let bitcoinPrice = new BitcoinPrice();
@@ -53,4 +55,4 @@ setInterval(function () {
             let bitcoinChangesPrice = new BitcoinChangesPrice();
         }
     }
-}, 5000);
+}, 5000);*/
