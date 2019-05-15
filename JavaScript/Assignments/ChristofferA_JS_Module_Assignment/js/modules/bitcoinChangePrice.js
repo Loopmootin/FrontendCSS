@@ -36,7 +36,7 @@ class BitcoinChangesPrice {
                 console.log("I'm looping prices");
 
                 let data = bitCoinData.changes.price[pri];
-                let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pri}</span></h4> <p>${data}$</p></div>`);
+                let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pri}</span></h4> <p id="${pri}">${data}</p>$</div>`);
 
                 this.bitcoinElement.appendChild(listElement);
             }
@@ -45,7 +45,7 @@ class BitcoinChangesPrice {
         for (let pri of Object.keys(bitCoinData.changes.price)) {
 
             let data = bitCoinData.changes.price[pri];
-            let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pri}</span></h4> <p>${data}$</p></div>`);
+            let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pri}</span></h4> <p id="${pri}">${data}</p>$</div>`);
 
             this.bitcoinElement.appendChild(listElement);
         }

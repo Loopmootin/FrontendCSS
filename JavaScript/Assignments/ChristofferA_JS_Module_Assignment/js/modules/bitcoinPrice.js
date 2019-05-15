@@ -2,7 +2,6 @@ import Data from './data.js';
 import Template from './template.js';
 
 class BitcoinPrice{ 
-
   constructor() { 
     this.listBitcoinDataPrice();
     this.bitcoinElement = document.querySelector(".prices");
@@ -10,16 +9,12 @@ class BitcoinPrice{
 
 
   async listBitcoinDataPrice() { 
-
-    let idArray = [];
-
     let removeElements = document.querySelectorAll(".price-item");
     removeElements.forEach(element => element.parentNode.removeChild(element));
 
     let bitCoinData = await Data.getBitcoinData();
 
     for(let i = 0; i < 5; i++) {
-
       let pri = Object.keys(bitCoinData)[i];
       let data = bitCoinData[pri];
 
@@ -29,8 +24,7 @@ class BitcoinPrice{
       let elementId = document.querySelector("#" + pri).id;
 
       if (elementId == pri) {
-        console.log("We are the same!");
-        idArray.push(elementId);
+        console.log("Id and JSON value match!");
       } else {
         console.log("We're not the same!");
       }

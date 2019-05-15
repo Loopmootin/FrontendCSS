@@ -34,7 +34,7 @@ class BitcoinChangesPercent {
                 console.log("I'm looping percentages!");
 
                 let data = bitCoinData.changes.percent[pct];
-                let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pct}</span></h4> <p>${data}%</p></div>`);
+                let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pct}</span></h4> <p id="${pct}">${data}</p>%</div>`);
 
                 this.bitcoinElement.appendChild(listElement);
             }
@@ -43,7 +43,7 @@ class BitcoinChangesPercent {
         for (let pct of Object.keys(bitCoinData.changes.percent)) {
 
             let data = bitCoinData.changes.percent[pct];
-            let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pct}</span></h4> <p>${data}%</p></div>`);
+            let listElement = Template.toDom(`<div class="changes-item square"><h4><span>${pct}</span></h4> <p id="${pct}">${data}</p>%</div>`);
 
             this.bitcoinElement.appendChild(listElement);
         }

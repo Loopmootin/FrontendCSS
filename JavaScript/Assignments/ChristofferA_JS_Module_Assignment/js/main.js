@@ -1,8 +1,9 @@
 import BitcoinPrice from './modules/bitcoinPrice.js';
 import BitcoinChangesPercent from './modules/bitcoinChangePercent.js';
 import BitcoinChangesPrice from './modules/bitcoinChangePrice.js';
-//import UpdateValue from './modules/updateValues.js';
-
+import UpdateValues from './modules/updateValues.js';
+import UpdateChangePriceValues from './modules/updateChangePriceValues.js';
+import UpdateChangePercentValues from './modules/updateChangePercentValues.js';
 
 let percentClicked = false;
 let beenFired = false;
@@ -32,11 +33,11 @@ if (document.URL.indexOf("index.html") >= 0) {
         percentClicked = true;
     });
 }
-/*
+
 setInterval(() => {
     if (document.URL.indexOf("index.html") >= 0) {
         
-        let bitcoinPrice = new BitcoinPrice();
+        let updateValues = new UpdateValues();
 
     } else if (document.URL.indexOf("price-changes.html") >= 0) {
 
@@ -48,11 +49,11 @@ setInterval(() => {
         });
 
         if (percentClicked == true) {
-            console.log("Percent button is active!");
-            let bitcoinChangesPercent = new BitcoinChangesPercent();
+            //console.log("Percent button is active!");
+            let updateChangePercentValues = new UpdateChangePercentValues();
         } else if(percentClicked == false) {
-            console.log("Price button is active!");
-            let bitcoinChangesPrice = new BitcoinChangesPrice();
+            //console.log("Price button is active!");
+            let updateChangePriceValues = new UpdateChangePriceValues();
         }
     }
-}, 5000);*/
+}, 2000);
