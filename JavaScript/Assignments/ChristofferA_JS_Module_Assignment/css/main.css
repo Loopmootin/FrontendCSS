@@ -25,7 +25,7 @@ body {
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
   min-width: 300px;
-  padding: 3em;
+  padding: 2.5em;
 }
 
 .sidebar .logo {
@@ -95,24 +95,6 @@ body {
   margin: 0 .5em;
   font-size: 1rem;
   font-weight: 700;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .main-content .prices,

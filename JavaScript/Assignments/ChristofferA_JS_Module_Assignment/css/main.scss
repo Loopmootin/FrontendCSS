@@ -45,7 +45,7 @@ body {
     background: $menu-background;
     flex: 1 1 20%;
     min-width: 300px;
-    padding: 3em;
+    padding: 2.5em;
 
     .logo {
         text-transform: uppercase;
@@ -106,16 +106,6 @@ body {
         }
     }
 
-    @keyframes pulse {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
     // Portfolio
     .prices,
     .changes {
@@ -124,9 +114,6 @@ body {
         grid-template-rows: repeat(auto, 1fr);
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 1em;
-
-        
-        //animation: pulse 24s infinite ease-in-out;
 
         .price-item,
         .changes-item {
