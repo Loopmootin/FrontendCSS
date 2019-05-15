@@ -18,16 +18,13 @@ class BitcoinChangesPrice {
         this.btnPrice = document.querySelector(".btn-price");
         this.btnPercent = document.querySelector(".btn-percent");
 
-        this.btnPrice.style.backgroundColor = "#f17464";
-        this.btnPrice.style.color = "#d6d6d6";
+        this.btnPrice.style.backgroundColor = "#6f81ce";
 
         this.btnPrice.addEventListener("click", () => {
 
-            this.btnPrice.style.backgroundColor = "#f17464";
-            this.btnPrice.style.color = "#d6d6d6";
+            this.btnPrice.style.backgroundColor = "#6f81ce";
 
-            this.btnPercent.style.backgroundColor = "#d6d6d6";
-            this.btnPercent.style.color = "#f17464";
+            this.btnPercent.style.backgroundColor = "#cacaca";
 
             let removeElements = document.querySelectorAll(".changes-item");
             removeElements.forEach(element => element.parentNode.removeChild(element));

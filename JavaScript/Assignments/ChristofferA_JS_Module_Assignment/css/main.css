@@ -8,8 +8,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #353535;
-  color: #d6d6d6;
+  background: #f5f5f5;
+  color: #353535;
   font-size: 1.2rem;
   line-height: 1.45;
   display: -webkit-box;
@@ -20,7 +20,7 @@ body {
 }
 
 .sidebar {
-  background: #4f4f4f;
+  background: #969696;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
@@ -30,12 +30,13 @@ body {
 
 .sidebar .logo {
   text-transform: uppercase;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
+  font-size: 1.5em;
 }
 
 @media (min-width: 1500px) {
   .sidebar .logo {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
   }
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 .sidebar .nav-item {
-  color: #737373;
+  color: #cacaca;
   text-decoration: none;
   font-size: 1.7rem;
   display: inline-block;
@@ -59,7 +60,7 @@ body {
 }
 
 .sidebar .nav-item.active {
-  color: #d6d6d6;
+  color: #353535;
 }
 
 .main-content {
@@ -89,8 +90,8 @@ body {
 
 .main-content .main-header .btn-container button {
   padding: 1em 2em;
-  background-color: #d6d6d6;
-  color: #f17464;
+  background-color: #cacaca;
+  color: #f5f5f5;
   margin: 0 .5em;
   font-size: 1rem;
   font-weight: 700;
@@ -130,8 +131,8 @@ body {
 .main-content .prices .changes-item,
 .main-content .changes .price-item,
 .main-content .changes .changes-item {
-  background: #f17464;
-  color: #d6d6d6;
+  background: #6f81ce;
+  color: #f5f5f5;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;

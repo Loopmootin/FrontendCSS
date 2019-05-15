@@ -21,11 +21,9 @@ class BitcoinChangesPercent {
 
         this.btnPercent.addEventListener("click", () => {
 
-            this.btnPrice.style.backgroundColor = "#d6d6d6";
-            this.btnPrice.style.color = "#f17464";
+            this.btnPrice.style.backgroundColor = "#cacaca";
 
-            this.btnPercent.style.backgroundColor = "#f17464";
-            this.btnPercent.style.color = "#d6d6d6";
+            this.btnPercent.style.backgroundColor = "#6f81ce";
 
             let removeElements = document.querySelectorAll(".changes-item");
             removeElements.forEach(element => element.parentNode.removeChild(element));

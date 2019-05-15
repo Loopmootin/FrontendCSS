@@ -20,11 +20,8 @@ if (document.URL.indexOf("index.html") >= 0) {
     let bitcoinChangesPrice = new BitcoinChangesPrice();
     document.querySelector(".btn-percent").addEventListener("click", function () {
 
-        document.querySelector(".btn-price").style.backgroundColor = "#d6d6d6";
-        document.querySelector(".btn-price").style.color = "#f17464";
-
-        document.querySelector(".btn-percent").style.backgroundColor = "#f17464";
-        document.querySelector(".btn-percent").style.color = "#d6d6d6";
+        document.querySelector(".btn-price").style.backgroundColor = "#cacaca";
+        document.querySelector(".btn-percent").style.backgroundColor = "#6f81ce";
         
         if (!beenFired) {
             loadOnce();
